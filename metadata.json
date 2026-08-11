@@ -1,0 +1,6 @@
+{
+  "name": "Zee Barber Shop",
+  "description": "Premium barbershop web experience for Zee Barber Shop featuring 15+ years of craftsmanship, interactive WhatsApp booking, services menu, loyalty rewards, gallery, and client reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

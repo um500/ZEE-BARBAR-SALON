@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color-scheme: dark;
+    background-color: #0b0b0e;
+    color: #f5f5f5;
+  }
+
+  h1, h2, h3, .font-serif-header {
+    font-family: 'Cinzel', serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d11;
+}
+::-webkit-scrollbar-thumb {
+  background: #231b20;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B1A2B;
+}
+
+/* Wine Red gradient text & glow effects */
+.wine-gradient-text {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e05265 50%, #8B1A2B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wine-border-glow {
+  box-shadow: 0 0 25px -5px rgba(139, 26, 43, 0.4);
+}
+
+/* Barber pole subtle animated stripe */
+.barber-pole-bar {
+  background: repeating-linear-gradient(
+    45deg,
+    #8B1A2B,
+    #8B1A2B 12px,
+    #ffffff 12px,
+    #ffffff 24px,
+    #181824 24px,
+    #181824 36px,
+    #ffffff 36px,
+    #ffffff 48px
+  );
+  background-size: 200% 200%;
+  animation: moveStripes 3s linear infinite;
+}
+
+@keyframes moveStripes {
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 0; }
+}
+
+
